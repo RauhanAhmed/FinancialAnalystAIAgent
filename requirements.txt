@@ -1,0 +1,8 @@
+phidata
+pyyaml
+plotly
+yfinance
+streamlit
+dataclasses
+python-dotenv
+google-generativeai
