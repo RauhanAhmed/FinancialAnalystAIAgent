@@ -7,6 +7,7 @@ An advanced, AI-powered financial analysis tool that combines market data retrie
 ## Table of Contents
 
 - [Overview](#overview)
+- [Demo](#demo)
 - [Key Features](#key-features)
 - [Architecture](#architecture)
 - [Technologies & Frameworks](#technologies--frameworks)
@@ -22,6 +23,14 @@ An advanced, AI-powered financial analysis tool that combines market data retrie
 ## Overview
 
 This project provides a complete solution for stock analysis by integrating historical market data, interactive visualizations, and AI-driven insights. At its core is the **Financial Analyst Agent**, which leverages the power of **Google Gemini 2.0 Flash** to process user queries, assess market trends, and generate clear, actionable recommendations. The accompanying **Streamlit** dashboard offers an intuitive user interface to explore stock data, visualize candlestick charts, and interact with the AI agent.
+
+---
+
+## Demo
+
+Below is a quick demonstration of how the Stock Analysis Dashboard works:
+
+![Stock Analysis Dashboard Demo](demo/demo.gif)
 
 ---
 
@@ -55,6 +64,7 @@ This project provides a complete solution for stock analysis by integrating hist
 5. **Configuration & Parameters:**  
    - **YAML File (`params.yaml`):** Stores essential parameters like the model ID, agent description, instructions, and ticker list URL.
 
+---
 
 ## Technologies & Frameworks
 
@@ -78,8 +88,8 @@ This project provides a complete solution for stock analysis by integrating hist
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/yourusername/stock-analysis-dashboard.git
-   cd stock-analysis-dashboard
+   git clone https://github.com/RauhanAhmed/FinancialAnalystAIAgent.git
+   cd FinancialAnalystAIAgent
    ```
 
 2. **Create a Virtual Environment:**
@@ -156,11 +166,11 @@ This file contains crucial configuration parameters:
 ## Author
 
 🔗 **Portfolio & Contact Information**:  
-- 🌍 Website: [rauhanahmed.org](https://rauhanahmed.org)  
-- 🏢 GitHub: [github.com/rauhanAhmed](https://github.com/rauhanAhmed)  
-- 💼 LinkedIn: [linkedin.com/in/rauhan-ahmed](https://www.linkedin.com/in/rauhan-ahmed)  
-- 🐦 Twitter (X): [x.com/ahmed_rauh46040](https://x.com/ahmed_rauh46040)  
-- 📧 Email: [rauhaan.siddiqui@gmail.com](mailto:rauhaan.siddiqui@gmail.com)
+- Website: [rauhanahmed.org](https://rauhanahmed.org)  
+- GitHub: [github.com/rauhanAhmed](https://github.com/rauhanAhmed)  
+- LinkedIn: [linkedin.com/in/rauhan-ahmed](https://www.linkedin.com/in/rauhan-ahmed)  
+- Twitter (X): [x.com/ahmed_rauh46040](https://x.com/ahmed_rauh46040)  
+- Email: [rauhaan.siddiqui@gmail.com](mailto:rauhaan.siddiqui@gmail.com)
 
 ---
 
