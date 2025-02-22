@@ -24,19 +24,6 @@ def main():
     # Create a dropdown menu to select a stock ticker
     selectedTicker = st.sidebar.selectbox("Select a Stock Ticker", stockTickers)
 
-    # Search field for filtering stock tickers
-    searchQuery = st.sidebar.text_input("Search Ticker", value="")
-    if searchQuery:
-        # Filter the list of tickers based on the search query
-        filteredTickers = [ticker for ticker in stockTickers if searchQuery.upper() in ticker]
-        
-        if filteredTickers:
-            # Display a dropdown with filtered results if matches are found
-            selectedTicker = st.sidebar.selectbox("Filtered Tickers", filteredTickers)
-        else:
-            # Display a message if no matching tickers are found
-            st.sidebar.write("No tickers found for your search.")
-
     # --- Main Screen ---
     st.title("Stock Analysis Dashboard")  # Main dashboard title
 
