@@ -12,27 +12,37 @@ def getStockTickers() -> list:
 
 # Function to fetch historical stock data and generate a candlestick chart
 def getCandlestickChartData(ticker: str) -> tuple:
-    df = yf.download(ticker, multi_level_index=False)  # Download stock data using Yahoo Finance API
-    
-    # Create a candlestick chart using Plotly
+    # Download stock data using Yahoo Finance API
+    df = yf.download(ticker, multi_level_index=False)
+
+    # Create a candlestick chart using Plotly with custom styling
     fig = go.Figure(data=[go.Candlestick(
         x=df.index,
         open=df['Open'],
         high=df['High'],
         low=df['Low'],
-        close=df['Close']
+        close=df['Close'],
+        increasing_line_color='limegreen',          
+        decreasing_line_color='crimson',              
+        increasing_fillcolor='rgba(50,205,50,0.3)',    
+        decreasing_fillcolor='rgba(220,20,60,0.3)'     
     )])
 
-    # Increase overall figure size for better visibility of candlestick width
-    fig.update_layout(width=1000, height=600)
+    # Update layout for better visualization and aesthetics
+    fig.update_layout(
+        title=f'Candlestick Chart for {ticker}',
+        xaxis_title='Date',
+        yaxis_title='Price',
+        width=1000,
+        height=600,
+        xaxis_rangeslider_visible=False  # Remove the range slider for a cleaner view
+    )
 
     # Remove gaps for non-trading days (e.g., weekends)
     fig.update_xaxes(
         type='date',
-        rangebreaks=[dict(bounds=["sat", "mon"])]  # Hides weekends from the chart
+        rangebreaks=[dict(bounds=["sat", "mon"])]
     )
     
-    # Remove the default range slider below the chart for a cleaner view
-    fig.update_layout(xaxis_rangeslider_visible=False)
-
-    return (df.sort_index(ascending=False), fig)  # Return sorted data (most recent first) and the chart
+    # Return the data (with most recent dates first) and the styled chart
+    return (df.sort_index(ascending=False), fig)
