@@ -37,5 +37,8 @@ class FinancialAnalystAgent:
         )
         
         # Run the agent with the user query and return the response
-        response = financeAgent.run(userQuery)
-        return response.to_dict()["messages"][-1]["content"]  # Extract the last message content
+        try:
+            response = financeAgent.run(userQuery)
+            return response.to_dict()["messages"][-1]["content"]  # Extract the last message content
+        except Exception as e:
+            return f"**ERROR: ** {e}"
