@@ -1,8 +1,8 @@
 phidata
 pyyaml
 plotly
+openai
 yfinance
 streamlit
 dataclasses
 python-dotenv
-google-generativeai

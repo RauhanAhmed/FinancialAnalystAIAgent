@@ -1,6 +1,6 @@
 # Import necessary modules
 from phi.tools.yfinance import YFinanceTools
-from phi.model.google import Gemini
+from phi.model.openai.like import OpenAILike
 from dataclasses import dataclass
 from phi.agent import Agent
 import yaml
@@ -24,9 +24,12 @@ class FinancialAnalystAgent:
         financeAgent = Agent(
             name="Finance Agent",
             description=self.params.get("description"),  # Set agent description from config
-            model=Gemini(
-                id=self.params.get("modelId")  # Load model ID from parameters
-            ),
+            model = OpenAILike(
+                id = "kimi-latest",
+                api_key = os.environ["MOONSHOT_API_KEY"],
+                base_url = "https://api.moonshot.cn/v1",
+            )
+            ,
             tools=[
                 YFinanceTools(enable_all=True)  # Enable all financial tools
             ],
