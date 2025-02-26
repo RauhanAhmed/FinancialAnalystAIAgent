@@ -26,8 +26,8 @@ class FinancialAnalystAgent:
             description=self.params.get("description"),  # Set agent description from config
             model = OpenAILike(
                 id = self.params.get("modelId"),
-                api_key = os.environ["MOONSHOT_API_KEY"],
-                base_url = "https://api.moonshot.cn/v1",
+                api_key = os.environ["OPENROUTER_API_KEY"],
+                base_url = "https://openrouter.ai/api/v1",
             )
             ,
             tools=[

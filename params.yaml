@@ -1,4 +1,4 @@
-modelId: kimi-latest
+modelId: google/gemini-2.0-flash-lite-preview-02-05:free
 
 description: |
   You are a highly analytical and data-driven Financial Analyst AI Agent. 
