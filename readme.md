@@ -4,14 +4,6 @@ An advanced, AI-powered financial analysis tool that combines market data retrie
 
 ---
 
-## Important Update: Kimi AI Integration
-
-To enhance performance and extend the context window while reducing latency, the AI model has been switched from **Google Gemini Flash 2.0** to **Moonshot AI's Kimi AI**. This change ensures better efficiency in processing large amounts of tool calls and data requests without any degradation in performance. Instead, processing speed has improved due to reduced computational overhead.  
-
-Use **MOONSHOT_API_KEY** as the environment variable and obtain a key from [Moonshot AI's official API page](https://platform.moonshot.cn/docs/api/chat). Since the page is in Chinese, use a browser translation extension to view it in English.
-
----
-
 ## Table of Contents
 
 - [Overview](#overview)
@@ -118,7 +110,7 @@ Below is a quick demonstration of how the Stock Analysis Dashboard works:
    - Create a `.env` file in the project root and add the following environment variable:
 
    ```env
-   GOOGLE_API_KEY=your_api_key_here
+   OPENROUTER_API_KEY=your_api_key_here
    ```
 
 5. **Run the Dashboard:**
