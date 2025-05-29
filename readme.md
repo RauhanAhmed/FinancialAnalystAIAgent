@@ -170,7 +170,7 @@ This file contains crucial configuration parameters:
 ## Author
 
 🔗 **Portfolio & Contact Information**:  
-- Website: [rauhanahmed.org](https://rauhanahmed.in)  
+- Website: [rauhanahmed.in](https://rauhanahmed.in)  
 - GitHub: [github.com/rauhanAhmed](https://github.com/rauhanAhmed)  
 - LinkedIn: [linkedin.com/in/rauhan-ahmed](https://www.linkedin.com/in/rauhan-ahmed)  
 - Twitter (X): [x.com/ahmed_rauh46040](https://x.com/ahmed_rauh46040)  
